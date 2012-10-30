@@ -60,7 +60,8 @@ and open the template in the editor.
                     var second=l_hour%60;
                     
                     if(day==0 && hour==0 && minute==0 && second==0){  
-                        clearInterval(count); 
+                        clearInterval(count);
+                        $("#time").html("Start to working");
                     }  
                 } 
                 
