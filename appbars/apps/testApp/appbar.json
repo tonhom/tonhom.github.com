@@ -11,6 +11,11 @@
             "text":"Open Location",
             "icon":"1352272722_Arzo Icons Icon 24 2.png",
             "handler":"location"
+        },
+        {
+            "text":"Clone Github",
+            "icon":"1352278812_source_s.png",
+            "handler":"github"
         }
     ]
 }
