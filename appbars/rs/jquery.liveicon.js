@@ -20,9 +20,11 @@ $.fn.liveicon = function(options){
     $(this).bind("contextmenu", function(e){
         if(!$.fn.liveicon.temp.toggle){
             $(this).css({border:"2px solid white"});
+            $.fn.liveicon.temp.toggle = true;
         }
         else{
             $(this).css({border:"2px solid transparent"});
+            $.fn.liveicon.temp.toggle = false;
         }
         $(this).appbar();
         return false;
