@@ -61,7 +61,7 @@ $.fn.liveicon.update = function(element){
 
 $.fn.liveicon.unselected = function(){
     $("div.live").css({border:"2px solid transparent"});
-    //$.fn.liveicon.temp.toggle = false;
+    $.fn.liveicon.temp.toggle = false;
 };
 
 $.fn.liveicon.temp = {
