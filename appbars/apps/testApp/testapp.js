@@ -4,6 +4,9 @@ this.window.testapp = {
     },
     location: function(){
         alert();
+    },
+    github: function(){
+        window.location= "https://github.com/tonhom/tonhom.github.com/tree/master/appbars";
     }
 }
 
