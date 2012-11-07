@@ -18,6 +18,8 @@ $.fn.liveicon = function(options){
         });
     // for right click to expand size
     $(this).bind("contextmenu", function(e){
+        // clear other liveicon
+        $("div.live").css({border:"2px solid transparent"});
         if(!$.fn.liveicon.temp.toggle){
             $(this).css({border:"2px solid white"});
             $.fn.liveicon.temp.toggle = true;
