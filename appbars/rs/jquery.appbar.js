@@ -23,7 +23,7 @@ $.fn.appbar = function(){
         return;
     }
     // render
-    var path = "/labs/appbars/"+config;
+    var path = config;
     $.getJSON(path, function(data){
         var content = "";
         for(var index in data["items"]){
