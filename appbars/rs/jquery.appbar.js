@@ -30,7 +30,7 @@ $.fn.appbar = function(){
             var text = data["items"][index].text;
             var icon = data["items"][index].icon;
             var handler = data["items"][index].handler;
-            var open = "<div class='item' handler='"+appname+"."+handler+"()'>";
+            var open = "<div class='item' handler='"+appname.toLowerCase()+"."+handler+"()'>";
             var close = "</div>";
             var img_icon = "<div class='icon'><img src='"+ apppath +"src/"+ icon +"' /></div>";
             var label = "<div class='text'>"+text+"</div>";
