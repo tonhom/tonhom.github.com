@@ -18,7 +18,12 @@ $.fn.liveicon = function(options){
         });
     // for right click to expand size
     $(this).bind("contextmenu", function(e){
-        $(this).css({border:"2px solid white"});
+        if(!$.fn.liveicon.temp.toggle){
+            $(this).css({border:"2px solid white"});
+        }
+        else{
+            $(this).css({border:"2px solid transparent"});
+        }
         $(this).appbar();
         return false;
     });
@@ -33,9 +38,9 @@ $.fn.liveicon = function(options){
 $.fn.liveicon.update = function(element){
     var id = "#" + element.id;
     var subpage = $(id).find(".subpage");
-    $.fn.liveicon.counter.counter++;
-    if($.fn.liveicon.counter.counter < subpage.length){
-        var position = $.fn.liveicon.counter.counter*90;
+    $.fn.liveicon.temp.counter++;
+    if($.fn.liveicon.temp.counter < subpage.length){
+        var position = $.fn.liveicon.temp.counter*90;
         $(id+ "> .subpages").animate({
             scrollTop:position+ "px"
         });
@@ -45,13 +50,14 @@ $.fn.liveicon.update = function(element){
         $(id+ "> .subpages").animate({
             scrollTop: "0px"
         }, "300");
-        $.fn.liveicon.counter.counter = 0;
+        $.fn.liveicon.temp.counter = 0;
     }
     window.clearInterval();
 };
 
-$.fn.liveicon.counter = {
-    counter: 0
+$.fn.liveicon.temp = {
+    counter: 0,
+    toggle: false
 };
 
 $.fn.liveicon.defaults = {
