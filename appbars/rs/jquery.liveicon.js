@@ -18,7 +18,7 @@ $.fn.liveicon = function(options){
         });
     // for right click to expand size
     $(this).bind("contextmenu", function(e){
-        
+        $(this).css({border:"2px solid white"});
         $(this).appbar();
         return false;
     });

@@ -24,7 +24,7 @@ body{
     width: 100%;
     overflow: hidden;
     height:90px;
-
+    border:2px solid transparent;
 }
 .live .subpages .subpage{
     height:90px;
