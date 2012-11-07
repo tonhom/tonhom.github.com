@@ -32,6 +32,9 @@ div.appbar div.item{
     border:1px solid transparent;
     display:inline-block;
 }
+div.appbar div.item.right{
+    float:right;
+}
 div.appbar div.item .icon{
     height: 50px;
     position: relative;
