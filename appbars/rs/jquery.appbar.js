@@ -9,7 +9,7 @@ $.fn.appbar = function(){
     // initiallize 
     var appname = $(this).attr("appname");
     var apppath = "apps/"+appname+"/";
-    var config = apppath+"appbar.php";
+    var config = apppath+"appbar.json";
     
     // override options 
     var opts = $.fn.appbar.defaults;
