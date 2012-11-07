@@ -31,6 +31,7 @@ $.fn.appbar = function(){
             var icon = data["items"][index].icon;
             var handler = data["items"][index].handler;
             var direction = data["items"][index].direction;
+            console.log(direction);
             if(direction == undefined)
                 var open = "<div class='item' handler='"+appname.toLowerCase()+"."+handler+"'>";
             else
