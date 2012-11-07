@@ -11,9 +11,6 @@ $.fn.appbar = function(){
     var apppath = "apps/"+appname+"/";
     var config = apppath+"appbar.json";
     
-    // override options 
-    var opts = $.fn.appbar.defaults;
-    
     // create appbar
     var appbar = $("div.appbar");
     appbar.attr("appname", appname);
@@ -50,11 +47,10 @@ $.fn.appbar = function(){
         bottom: "0px"  
     };
     $("div.appbar").animate(animateStyle, "fast", function(){
-        // add handler
+    // add handler
     handler.add();
     });
-    $.fn.appbar.other.display = true;
-     
+    $.fn.appbar.other.display = true; 
 };
 
 $.fn.appbar.close = function(){
@@ -66,15 +62,6 @@ $.fn.appbar.close = function(){
     $("div.appbar").animate(animateStyle, "normal");
 };
 
-$.fn.appbar.items = [];
-
-$.fn.appbar.handlers = [];
-
 $.fn.appbar.other = {
     display: false
 }
-
-$.fn.appbar.defaults = {
-    name: ""
-};
-

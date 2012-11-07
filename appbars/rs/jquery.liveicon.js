@@ -59,6 +59,11 @@ $.fn.liveicon.update = function(element){
     window.clearInterval();
 };
 
+$.fn.liveicon.unselected = function(){
+    $("div.live").css({border:"2px solid transparent"});
+    $.fn.liveicon.temp.toggle = true;
+};
+
 $.fn.liveicon.temp = {
     counter: 0,
     toggle: false

@@ -5,6 +5,7 @@ this.window.handler = {
             func+="();";
             console.log(func);
             eval(func.toLowerCase());
+            $.fn.liveicon.unselected();
             $.fn.appbar.close();
         });
         
