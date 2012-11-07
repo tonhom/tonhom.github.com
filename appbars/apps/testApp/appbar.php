@@ -2,7 +2,7 @@
 Header("content-type: application/json");
 
 $appdata = array(
-    "name" => "testApp",
+    "name" => "testapp",
     "items" => array(
         array(
             "text" => "Options",
