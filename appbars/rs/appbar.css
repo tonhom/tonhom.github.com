@@ -1,0 +1,55 @@
+
+root { 
+    display: block;
+}
+
+div.appbar{
+    position:fixed;
+    bottom:-120px;
+    left:0px;
+    width:100%;
+    height:100px;
+    color:black;
+    text-align: left;
+    padding-top:10px;
+}
+
+div.appbar.white{
+    
+    color:black!important;
+    background-image: url(bg_white.png)!important; 
+}
+div.appbar.black{
+    
+    background-image: url(bg_black.png)!important;
+    color:white!important;
+}
+div.appbar div.item{
+    width: 100px;
+    height:90px;
+    padding:5px;
+    text-align: center;
+    border:1px solid transparent;
+    display:inline-block;
+}
+div.appbar div.item .icon{
+    height: 50px;
+    position: relative;
+    top:10px;
+}
+
+div.appbar div.item .text{
+    height:40px;
+    padding-top:20px;
+}
+
+div.appbar.white div.item:hover{
+    border-radius:5px;
+    background-color: #fff;
+}
+
+div.appbar.black div.item:hover{
+    border-radius:5px;
+    background-color: #000;
+}
+

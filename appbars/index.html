@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="rs/liveicon.css" type="text/css" />
+        <link rel="stylesheet" href="rs/appbar.css" type="text/css" />
+        <script src="rs/core.js"></script>
+        <script src="rs/jquery.min.js"></script>
+        <script src="rs/jquery.liveicon.js"></script>
+        <script src="rs/jquery.appbar.js"></script>
+        <script src="apps/testApp/testapp.js"></script>
+    </head>
+    <body>
+        <div class="live" id="test" appname="testapp">
+            <div class="subpages">
+                <div class="subpage"><img src="rs/BOOK.png" /></div>
+                <div class="subpage">ความแตกต่างระหว่าง Windows RT กับ Windows 8</div>
+                <div class="subpage">Steven Sinofsky บอก เครื่องรัน Windows 8 มีคุณค่ากว่า iPad mini</div>
+                <div class="subpage">แอปเปิลโดนฟ้อง Siri ละเมิดสิทธิบัตรเรื่องการประมวลผลภาษาธรรมชาติ</div>
+            </div>
+            <div class="label">Blognone</div>
+            <div class="notification">3</div>
+        </div>
+        <script>
+            $("#test").liveicon({size:"large"});
+            var notification = {
+                insert: function(){
+                    $("#test > .subpages  .subpage:first-child").after("<div class='subpage'>ทดสอบเพิ่มอันใหม่</div>");
+                }
+            }
+            
+        </script>
+        <div class="appbar black"></div>
+    </body>
+</html>
