@@ -59,7 +59,7 @@ $.fn.appbar.close = function(){
         bottom: "-120px"  
     };
         
-    $("div.appbar").animate(animateStyle, "normal");
+    $("div.appbar").animate(animateStyle, "fast");
 };
 
 $.fn.appbar.other = {
